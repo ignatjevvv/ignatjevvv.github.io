@@ -1,0 +1,139 @@
+.wrpForm {
+    height: auto;
+    text-align: center;
+    width: auto;
+  }
+  
+  .wrpForm ul {
+    display: inline-block;
+    line-height: 1 !important;
+    list-style-position: outside !important;
+    list-style-type: none !important;
+    margin: 0;
+    max-width: 650px;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .wrpForm li {
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+    position: relative;
+  }
+  
+  .wrpForm ul {
+    border-bottom: 1px solid #777;
+  }
+  
+  .wrpForm li:first-child {
+    border-bottom: 1px solid #777;
+    text-align: center;
+  }
+  
+  .required_notification {
+    color: #d45252;
+    display: block;
+    margin: 5px 0 0;
+    text-align: right;
+  }
+  
+  .wrpForm label {
+    display: inline-block;
+    margin-top: 3px;
+    padding: 3px;
+    width: 200px;
+  }
+  
+  .wrpForm .rem {
+    display: block;
+    font-size: small;
+    font-weight: 100;
+    margin-right: 25px;
+    text-align: right;
+  }
+  
+  .wrpForm input {
+    height: 12px;
+    padding: 9px;
+  }
+  
+  .wrpForm input,
+  .wrpForm select,
+  .wrpForm textarea {
+    border: 1px solid #c5c5c5;
+    border-radius: 2px;
+    box-shadow: inset -1px -1px 15px 0px rgb(181, 180, 180);
+    width: 250px;
+  }
+  
+  .wrpForm .wpcf7-email,
+  .wrpForm .wpcf7-textarea {
+    line-height: 18px;
+    max-width: 250px;
+    padding: 9px 7px 0 12px;
+  }
+  
+  .wrpForm input:focus,
+  .wrpForm textarea:focus {
+    background: #fff;
+  }
+  
+  button.submit {
+    background-color: #4f8c1c !important;
+    border: 3px solid #4f8e1d !important;
+    border-radius: 20px;
+    color: #fff !important;
+    font-weight: 700;
+    padding: 6px 20px;
+    text-align: center;
+  }
+  
+  button.submit:hover {
+    background: white !important;
+    border: 3px solid #fdda25 !important;
+    color: black !important;
+  }
+  
+  button.submit:active {
+    box-shadow: none;
+    color: black;
+  }
+  
+  .wrpForm select {
+    width: 270px;
+  }
+  
+  .form_hint::before {
+    color: #d45252;
+    content: "\25C0";
+    left: -6px;
+    position: absolute;
+    top: 1px;
+  }
+  
+  .form_hint {
+    background: #d45252;
+    border-radius: 3px;
+    color: #fff;
+    display: none;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 3px 10px;
+    position: absolute;
+    z-index: 999;
+  }
+  
+  span.wpcf7-form-control-wrap:focus+.form_hint {
+    display: inline;
+  }
+  
+  #tariffsWrp h1 {
+    color: #0085ea;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 15px !important;
+    text-align: center;
+  }
+  
+  
