@@ -3,8 +3,8 @@
 
 body {
     font-family: Poppins;
+    background-color: hsl(250, 60%, 99%);
 }
-
 
 .wrapper {
     display: grid;
