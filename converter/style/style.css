@@ -5,6 +5,14 @@ body {
     font-family: Poppins;
 }
 
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: baseline;
+    justify-content: center;
+    column-gap: 5rem;
+}
 .input__wrapper {
     display: flex;
     flex-direction: column;
