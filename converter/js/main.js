@@ -8,7 +8,7 @@ button.addEventListener('click', () => {
     redgateXML.value = '';
     shopNameArr.forEach(function (i) {
         if (i != '' && i.indexOf('eva') != 0) {
-            shopName.value += `eva${i.replace(/\n/g, '')}a \n`;
+            shopName.value += `eva${i.replace(/\n/g, '')}a\n`;
             redgateXML.value += `<value version = "5" type = "database">
     <name>master</name> 
     <server>eva${i.replace(/\n/g, '')}a\\kassa</server> 
