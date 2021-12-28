@@ -22,7 +22,7 @@ body {
 
 textarea {
     border-radius: .5rem;
-    border: 1px solid rgb(153, 153, 153);
+    border: 1px solid rgb(222, 222, 222);
     padding: 1rem;
     resize: none;
     background-color: hsl(260, 70%, 96%);
