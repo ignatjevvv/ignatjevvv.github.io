@@ -1,6 +1,7 @@
 const shopName = document.getElementById('shopName');
 const redgateXML = document.getElementById('redgateXML');
 const button = document.getElementById('button');
+const copyButton = document.querySelectorAll('.wrapper__copy');
 
 button.addEventListener('click', () => {
     let shopNameArr = shopName.value.replace(/\n/g, ' ').split(' ');
@@ -26,3 +27,13 @@ button.addEventListener('click', () => {
         }
     });
 })
+
+/********************* COPY TO BUFER ********************/
+
+copyButton.forEach(i => {
+    i.addEventListener('click', () => {
+        i.parentNode.childNodes[5].select();
+        document.execCommand("copy");
+    })
+})
+
