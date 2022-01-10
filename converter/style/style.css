@@ -31,6 +31,21 @@ body {
     cursor: pointer;
 }
 
+.wrapper__count {
+    position: absolute;
+    bottom: 4rem;
+    width: 100%;
+    background-color: #bfbfbfcf;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.count {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+
 textarea {
     border-radius: .5rem;
     border: 1px solid rgb(222, 222, 222);
