@@ -34,6 +34,7 @@ copyButton.forEach(i => {
     i.addEventListener('click', () => {
         i.parentNode.childNodes[5].select();
         document.execCommand("copy");
+        alert("Cкопировано в буфер обмена");
     })
 })
 
