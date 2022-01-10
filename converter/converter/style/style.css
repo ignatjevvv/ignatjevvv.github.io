@@ -1,0 +1,91 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: Poppins;
+    background-color: hsl(250, 60%, 99%);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: baseline;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.input__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper__copy {
+    position: absolute;
+    font-size: 1.4rem;
+    right: 0.6rem;
+    top: 4.5rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.wrapper__count {
+    position: absolute;
+    bottom: 4rem;
+    width: 100%;
+    background-color: #dbdbdb;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.count {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+}
+
+textarea {
+    border-radius: .5rem;
+    border: 1px solid rgb(222, 222, 222);
+    padding: 1rem;
+    resize: none;
+    background-color: hsl(260, 70%, 96%);
+}
+
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+
+a {
+    width: 100%;
+}
+
+
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+    width: .40rem;
+    background-color: #888;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(68, 0, 255);
+}
