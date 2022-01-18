@@ -58,6 +58,10 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:active, :hover, :focus {
+    outline-offset: 2px;
+}
+
 button {
     background-color: black;
     color: white;
