@@ -5,21 +5,19 @@ const countItem = document.querySelectorAll('.count');
 
 button.addEventListener('click', () => {
 
-	let shopNameArr = shopName.value.replace(/\n/g, ' ').split(' ');
+   let shopNameArr = [];
 
-	if (shopName.value.length == 0) {
-		shopNameArr.length = 0;
-	}
+   if (shopName.value.indexOf('eva') != 0 && shopName.value != 0) {
+      shopNameArr = shopName.value.replace(/\n/g, ' ').split(' ');
+   }
 
-	countItem[0].innerHTML = `Количество: ${shopNameArr.length}`;
+   shopName.value = '';
+   redgateXML.value = '';
 
-	shopName.value = '';
-	redgateXML.value = '';
-
-	shopNameArr.forEach(function (i) {
-		if (i != '' && i.indexOf('eva') != 0) {
-			shopName.value += `eva${i.replace(/\n/g, '')}a\n`;
-			redgateXML.value += `<value version = "5" type = "database">
+   shopNameArr.forEach(function (i) {
+      if (i != '' && i.indexOf('eva') != 0) {
+         shopName.value += `eva${i.replace(/\n/g, '')}a\n`;
+         redgateXML.value += `<value version = "5" type = "database">
     <name>master</name> 
     <server>eva${i.replace(/\n/g, '')}a\\kassa</server> 
     <integratedSecurity>False</integratedSecurity> 
@@ -33,21 +31,26 @@ button.addEventListener('click', () => {
     <selected>False</selected> 
     <cserver>eva${i.replace(/\n/g, '')}a\\kassa</cserver> 
 </value> \n`
-		}
-	});
+      }
+   });
+
+   countItem[0].innerHTML = `Количество: ${shopNameArr.length}`;
+   shopNameArr.splice(0);
 
 })
+
+
 
 /********************* COPY TO BUFER ********************/
 
 const copyButton = document.querySelectorAll('.wrapper__copy');
 
 copyButton.forEach(i => {
-	i.addEventListener('click', () => {
-		i.parentNode.childNodes[5].select();
-		document.execCommand("copy");
-		if (shopName.textLength > 0) {
-			alert("Скопировано в буфер")
-		}
-	})
+   i.addEventListener('click', () => {
+      i.parentNode.childNodes[5].select();
+      document.execCommand("copy");
+      if (shopName.textLength > 0) {
+         alert("Скопировано в буфер")
+      }
+   })
 });
