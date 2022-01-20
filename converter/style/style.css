@@ -46,6 +46,25 @@ body {
     font-size: .8rem;
 }
 
+.copy {
+    position: absolute;
+    background: aquamarine;
+    width: 5rem;
+    text-align: center;
+    border-radius: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.active {
+    visibility: visible;
+    opacity: 1;
+} 
+
 textarea {
     border-radius: .5rem;
     border: 1px solid rgb(222, 222, 222);

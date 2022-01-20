@@ -8,7 +8,12 @@ button.addEventListener('click', () => {
    let shopNameArr = [];
 
    if (shopName.value.indexOf('eva') != 0 && shopName.value != 0) {
-      shopNameArr = shopName.value.replace(/\n/g, ' ').split(' ');
+      shopNameArr = shopName.value
+         .replace(/\n/g, ' ')
+         .split(' ')
+         .filter( function(el) {
+         return el != '';
+      });
    }
 
    shopName.value = '';
@@ -43,14 +48,31 @@ button.addEventListener('click', () => {
 
 /********************* COPY TO BUFER ********************/
 
+const copyLabel = document.querySelectorAll('.copy');
 const copyButton = document.querySelectorAll('.wrapper__copy');
 
-copyButton.forEach(i => {
-   i.addEventListener('click', () => {
-      i.parentNode.childNodes[5].select();
+
+let modal = function (label) {
+   copyLabel[label].classList.add('active');
+}
+
+copyButton.forEach((copyBtn, i) => {
+   copyBtn.addEventListener('click', () => {
+      console.log(i);
+
+      copyBtn.parentNode.childNodes[7].select();
       document.execCommand("copy");
+
       if (shopName.textLength > 0) {
-         alert("Скопировано в буфер")
+         modal(i);
+         setTimeout(modalClose, 1000);
       }
+
    })
 });
+
+let modalClose = function () {
+   copyLabel.forEach(copyLabel => {
+      copyLabel.classList.remove('active');
+   })
+}
