@@ -13,7 +13,7 @@ function createItemList() {
       shopNameArr = shopName.value
          .replace(/\n/g, ' ')
          .split(' ')
-         .filter(function (el) { return el != '' });
+         .filter(item => { return item != '' && +item });
    }
 
    deleteDublicateItem(shopNameArr);
