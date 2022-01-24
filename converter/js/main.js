@@ -45,7 +45,8 @@ function showListItem(shopListArr) {
 
       if (i != '' && i.indexOf('eva') != 0) {
 
-         shopName.value += `eva${i.replace(/\n/g, '')}a\n`;
+         //shopName.value += `eva${i.replace(/\n/g, '')}a\n`;
+         shopName.value += `sh${i.replace(/\n/g, '')}a@eva.ua\n`;
          redgateXML.value +=
             `<value version = "5" type = "database">` +
             `\n   <name>master</name>` +
