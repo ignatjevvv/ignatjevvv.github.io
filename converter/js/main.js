@@ -1,3 +1,5 @@
+"use strict"
+
 const shopName = document.getElementById('shopName');
 const redgateXML = document.getElementById('redgateXML');
 const button = document.getElementById('button');
@@ -6,7 +8,6 @@ const countItem = document.querySelectorAll('.count');
 button.addEventListener('click', createItemList);
 
 function createItemList() {
-
    let shopNameArr = [];
 
    if (shopName.value.indexOf('eva') != 0 && shopName.value != 0) {
@@ -15,12 +16,12 @@ function createItemList() {
          .split(' ')
          .filter(item => { return item != '' && +item });
    }
-
+   
+   selectRadioButton();
    deleteDublicateItem(shopNameArr);
 }
 
 function deleteDublicateItem(arr) {
-
    const arrayWithoutDuplicates = [...new Set(arr)];
    let duplicates = [...arr];
 
@@ -36,17 +37,29 @@ function deleteDublicateItem(arr) {
 
 }
 
+function selectRadioButton() {
+   const radioButton = document.getElementsByName('select');
+   for (var i = 0; i < radioButton.length; i++) {
+     if (radioButton[i].checked) {
+       return i;
+     }
+   }
+}
+
 function showListItem(shopListArr) {
+   
+   console.log(selectRadioButton());
 
    shopName.value = "";
    redgateXML.value = "";
 
    shopListArr.forEach(function (i) {
 
+      const typeConvert = [`eva${i.replace(/\n/g, '')}a\n`, `sh${i.replace(/\n/g, '')}a@eva.ua\n`];
+      
       if (i != '' && i.indexOf('eva') != 0) {
-
-         //shopName.value += `eva${i.replace(/\n/g, '')}a\n`;
-         shopName.value += `sh${i.replace(/\n/g, '')}a@eva.ua\n`;
+         let test = typeConvert[selectRadioButton()];
+         shopName.value += test;
          redgateXML.value +=
             `<value version = "5" type = "database">` +
             `\n   <name>master</name>` +
@@ -72,6 +85,7 @@ function showCountItem(arr) {
    countItem[0].innerHTML = `Количество: ${arr.length}`;
 }
 
+
 /********************* COPY TO BUFFER ********************/
 
 const copyButton = document.querySelectorAll('.wrapper__copy');
@@ -86,6 +100,7 @@ copyButton.forEach((copyBtn, i) => {
       }
    })
 });
+
 
 /**************** MODAL LABEL "Copyed!" *****************/
 

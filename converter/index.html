@@ -11,7 +11,11 @@
 </head>
 
 <body>
+
+
+
    <div class="wrapper">
+
       <div class="input__wrapper">
          <h3>Example: 123 -> eva123a</h3>
          <div id="copy" class="copy">Copied!</div>
@@ -22,6 +26,7 @@
          </div>
          <button id="button">Конвертировать</button>
       </div>
+
       <div class="input__wrapper">
          <h3>RedGate config</h3>
          <div id="copy" class="copy">Copied!</div>
@@ -29,7 +34,17 @@
          <textarea name="shops" id="redgateXML" cols="50" rows="30"></textarea>
          <button id="button" onclick="window.open('download/Etalon.smsproj')">Эталонный конфиг</button>
       </div>
+
+      <div class="input__wrapper">
+         <h3>Тип конвертации</h3>
+         <div class="wrapper__select">
+            <div><input name="select" type="radio" value="1" checked>evaXXXa</div>
+            <div><input name="select" type="radio" value="2">shXXXa@eva.ua</div>
+         </div>
+      </div>
+
    </div>
+
    <script src="js/main.js"></script>
 </body>
 </html>
