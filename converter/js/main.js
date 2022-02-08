@@ -47,9 +47,6 @@ function selectRadioButton() {
 }
 
 function showListItem(shopListArr) {
-   
-   console.log(selectRadioButton());
-
    shopName.value = "";
    redgateXML.value = "";
 
