@@ -121,6 +121,3 @@ h3 {
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(68, 0, 255);
 }
-
-
-input:focus, select:focus, textarea:focus, button:focus { outline: none; }
