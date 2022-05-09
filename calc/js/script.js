@@ -194,3 +194,11 @@ function loadStorageData() {
 
 addListerInput();
 loadStorageData();
+
+// VanillaTilt
+
+VanillaTilt.init(document.querySelectorAll(".calculator__result"), {
+    max: 15,
+    speed: 500
+});
+
