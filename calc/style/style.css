@@ -189,3 +189,22 @@ label.calculator_input.error {
     font-size: 18px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        row-gap: 3em;
+    }
+
+    .calculator__electricity {
+        padding: 0px 10px;
+    }
+
+    .calculator__water {
+        padding: 0px 10px;
+    }
+    
+    label.calculator_input {
+        width: 235px;
+    }
+}
