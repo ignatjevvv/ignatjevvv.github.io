@@ -100,7 +100,7 @@ class Calculator {
     // Save value
     btns(element, key) {
         this.btn.addEventListener('click', (e) => {
-            if (+this.inputTotalValue.value > +this.inputPreValue.value) {
+            if (+this.inputTotalValue.value > +this.inputPreValue.value || +this.inputPreValue.value === 0) {
                 this.saveValueCurrent(e.target.parentNode.className, element, key);
             }
         });
