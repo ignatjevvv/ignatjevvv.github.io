@@ -9,10 +9,11 @@
 body {
     font-family: Inter;
     color: rgb(208, 208, 208);
+    background-color: #F0F0F0;
     display: grid;
-	align-items: center;
-	/* justify-content: center; */
-	height: 100vh;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
 }
 
 .calculating {
@@ -147,7 +148,6 @@ label.calculator_input.error {
     grid-area: 1 / 2 / 3 / 4;
     align-self: center;
     justify-self: center;
-    /* word-break: break-all; */
 }
 
 .calculator__item.tarif {
