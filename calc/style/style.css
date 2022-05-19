@@ -35,14 +35,13 @@ body {
     margin-bottom: 20px;
 }
 
-.calculator__electricity {
+.calculator {
     width: 500px;
     /* background-color: aqua; */
 }
 
-.calculator__water {
-    width: 500px;
-    /* background-color: aqua; */
+.calculator__result.transform {
+    transform-style: preserve-3d;
 }
 
 .calculator__input {
