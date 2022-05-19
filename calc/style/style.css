@@ -188,7 +188,7 @@ label.calculator_input.error {
     }
     
     .calculator__result.transform {
-        transform-style: unset;
+        display: none;
     }
 
     label.calculator_input {
