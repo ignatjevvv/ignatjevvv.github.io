@@ -187,6 +187,10 @@ label.calculator_input.error {
         padding: 0px 10px;
     }
     
+    .calculator__result.transform {
+        transform-style: unset;
+    }
+
     label.calculator_input {
         width: 235px;
     }
