@@ -37,7 +37,6 @@ body {
 
 .calculator {
     width: 500px;
-    /* background-color: aqua; */
 }
 
 .calculator__result.transform {
@@ -121,16 +120,6 @@ label.calculator_input.error {
     margin-top: 10px;
 }
 
-/* .calculator__result.water__result {
-    background: linear-gradient(180deg, #D4F8FF 0%, #FFFFE0 100%);
-    transform-style: preserve-3d;
-} */
-
-/*
-.calculator__result.gas__result {
-    background: linear-gradient(180deg, #ffecd4 0%, #FFFFE0 100%);
-} */
-
 .calculator__info {
     font-size: 15px;
     line-height: 20px;
@@ -194,11 +183,7 @@ label.calculator_input.error {
         row-gap: 3em;
     }
 
-    .calculator__electricity {
-        padding: 0px 10px;
-    }
-
-    .calculator__water {
+    .calculator {
         padding: 0px 10px;
     }
     
