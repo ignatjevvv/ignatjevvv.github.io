@@ -60,11 +60,11 @@ function showListItem(shopListArr) {
          redgateXML.value +=
             `<value version = "5" type = "database">` +
             `\n   <name>master</name>` +
-            `\n   <server>eva${i.replace(/\n/g, '')}a\\kassa</server>` +
+            `\n   <server>eva${i.replace(/\n/g, '')}a</server>` +
             `\n   <integratedSecurity>False</integratedSecurity>` +
             `\n   <username>sa</username>` +
             `\n   <savePassword>True</savePassword>` +
-            `\n   <password encrypted="1">UKjJDz3jUrg=</password>` +
+            `\n   <password encrypted="1">4qRK3cJkcZFGAKFyzCB4aA==</password>` +
             `\n   <connectionTimeout>15</connectionTimeout>` +
             `\n   <protocol>-1</protocol>` +
             `\n   <packetSize>4096</packetSize>` +
