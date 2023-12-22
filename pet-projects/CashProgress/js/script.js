@@ -145,7 +145,7 @@ function getCurrencyCourseDollarAPI() {
 
     const options = {
         method: 'GET',
-        // mode: 'no-cors'
+        mode: 'no-cors'
       };
 
     fetch(url, options)
