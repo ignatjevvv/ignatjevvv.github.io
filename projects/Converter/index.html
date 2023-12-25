@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style/style.css">
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   <title>Сonverter</title>
+</head>
+
+<body>
+
+   <header>
+      <div class="nav__header">
+         <h1 class="nav__logo">Сonverter</h1>
+         <span class="nav__info">Stack: HTML+CSS+JS</span>
+
+         <div class="nav__option">
+            <span>Тип конвертации:</span>
+            <div class="wrapper__select">
+               <div class="wrapper__item">
+                  <input name="select" type="radio" value="1" checked>
+                  eva123a
+               </div>
+               <span>|</span>
+               <div class="wrapper__item">
+                  <input name="select" type="radio" value="2">
+                  sh123a@eva.ua
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </header>
+
+   <div class="wrapper">
+      <div class="input__wrapper">
+         <h3>Example: 123 -> eva123a</h3>
+         <div class="input__item">
+            <div id="copy" class="copy">Copied!</div>
+            <i class="uil uil-copy wrapper__copy" title="Скопировать"></i>
+            <textarea name="shops" id="shopName" cols="25" rows="30" placeholder="Вставьте список"></textarea>
+            <div class="wrapper__count">
+               <span class="count">Количество: 0</span>
+            </div>
+         </div>
+         <button id="button">Конвертировать</button>
+      </div>
+
+      <div class="input__wrapper">
+         <h3>RedGate config</h3>
+         <div class="input__item">
+            <div id="copy" class="copy">Copied!</div>
+            <i class="uil uil-copy wrapper__copy" title="Скопировать"></i>
+            <textarea name="shops" id="redgateXML" cols="50" rows="30"></textarea>
+         </div>
+         <button id="button" onclick="window.open('download/Etalon.smsproj')">Эталонный конфиг</button>
+      </div>
+   </div>
+
+   <script src="js/main.js"></script>
+</body>
+
+</html>
