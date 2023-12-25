@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy&Water Calc</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav__header">
+            <h1 class="nav__logo">Energy&Water Calc</h1>
+            <span class="nav__info">Stack: HTML+CSS+JS</span>
+        </div>
+    </header>
+    <div class="calculating">
+        <div class="container">
+            <div class="calculator">
+                <div class="calculator__logo">⚡</div>
+                <div class="calculator__input">
+                    <label class="calculator_input">
+                        <div class="label_wrapper">
+                            <div class="input_label">Предыдущие</div>
+                        </div>
+                        <div class="input_wrapper">
+                            <input type="text" id="elect_previous" placeholder="000000" class="calculator__input-item"
+                                maxlength="6">
+                            <div class="input_icon">
+                                <span class="icon icon_input">кВт</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="calculator_input">
+                        <div class="label_wrapper">
+                            <div class="input_label">Текущие</div>
+                            <!-- <div class="input_label">Сохранить</div> -->
+                        </div>
+                        <div class="input_wrapper">
+                            <input type="text" id="elect_current" placeholder="000000" class="calculator__input-item"
+                                maxlength="6">
+                            <div class="input_icon">
+                                <span class="icon icon_input">кВт</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="calculator__result">
+                    <div class="calculator__item">
+                        <div class="calculator__info">Предыдущие</div>
+                        <span data-calc-display="previous" class="calculator__number">0</span>
+                        <span class="icon">кВт</span>
+                    </div>
+                    <div class="calculator__item">
+                        <div class="calculator__info">Текущие</div>
+                        <span data-calc-display="current" class="calculator__number">0</span>
+                        <span class="icon">кВт</span>
+                    </div>
+                    <div class="calculator__item">
+                        <div class="calculator__info">Разница</div>
+                        <span data-calc-display="difference" class="calculator__number">0</span>
+                        <span class="icon">кВт</span>
+                    </div>
+                    <div class="calculator__item total">
+                        <div class="calculator__info">Итого</div>
+                        <span data-calc-display="sum" style="font-size: 50px;" class="calculator__number">0</span>
+                        <span class="icon icon_big">₴</span>
+                    </div>
+                    <div class="calculator__item tarif">
+                        <div>
+                            <div class="calculator__info">Тариф</div>
+                            <span data-calc-display="rate" class="calculator__number">0</span>
+                            <span class="icon">₴</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn" class="btn">Сохранить</button>
+            </div>
+
+            <!-- Water -->
+
+            <div class="calculator">
+                <div class="calculator__logo">💧</div>
+                <div class="calculator__input">
+                    <label class="calculator_input">
+                        <div class="label_wrapper">
+                            <div class="input_label">Предыдущие</div>
+                        </div>
+                        <div class="input_wrapper">
+                            <input type="text" id="water_previous" placeholder="00000" class="calculator__input-item"
+                                maxlength="5">
+                            <div class="input_icon">
+                                <span class="icon icon_input">м3</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="calculator_input">
+                        <div class="label_wrapper">
+                            <div class="input_label">Текущие</div>
+                        </div>
+                        <div class="input_wrapper">
+                            <input type="text" id="water_current" placeholder="00000" class="calculator__input-item"
+                                maxlength="5">
+                            <div class="input_icon">
+                                <span class="icon icon_input">м3</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="calculator__result">
+                    <div class="calculator__item">
+                        <div class="calculator__info">Предыдущие</div>
+                        <span data-calc-display="water_previous" class="calculator__number">0</span>
+                        <span class="icon">м3</span>
+                    </div>
+                    <div class="calculator__item">
+                        <div class="calculator__info">Текущие</div>
+                        <span data-calc-display="water_current" class="calculator__number">0</span>
+                        <span class="icon">м3</span>
+                    </div>
+                    <div class="calculator__item">
+                        <div class="calculator__info">Разница</div>
+                        <span data-calc-display="water_difference" class="calculator__number">0</span>
+                        <span class="icon">м3</span>
+                    </div>
+                    <div class="calculator__item total">
+                        <div class="calculator__info">Итого</div>
+                        <span data-calc-display="water_sum" style="font-size: 50px;" class="calculator__number">0</span>
+                        <span class="icon icon_big">₴</span>
+                    </div>
+                    <div class="calculator__item tarif">
+                        <div>
+                            <div class="calculator__info">Тариф</div>
+                            <span data-calc-display="water_rate" class="calculator__number">0</span>
+                            <span class="icon">₴</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn_water" class="btn">Сохранить</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/Energy&Water Calc/js/vanila-tilt.js"></script>
+    <script src="/Energy&Water Calc/js/bundle.js"></script>
+
+</body>
+
+</html>
