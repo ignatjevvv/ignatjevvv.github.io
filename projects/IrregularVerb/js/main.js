@@ -428,8 +428,10 @@ let wordList = [
 
 ];
 
+
 // ******************* SHOW WORDS LIST ON WEB PAGE *************************
-const table = document.querySelector('tbody');
+const table = document.querySelector('tbody'),
+      tableWord = document.querySelector('table');
 
 function printWordList(words) {
     words.forEach(item => {
